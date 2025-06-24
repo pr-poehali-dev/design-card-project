@@ -1,7 +1,11 @@
 import Icon from "@/components/ui/icon";
 import { Button } from "@/components/ui/button";
 
-const Hero = () => {
+interface HeroProps {
+  onContactClick: () => void;
+}
+
+const Hero = ({ onContactClick }: HeroProps) => {
   return (
     <section className="relative bg-gradient-brand min-h-screen flex items-center overflow-hidden">
       {/* Background decoration */}
@@ -34,12 +38,7 @@ const Hero = () => {
                 </div>
                 <span className="text-lg">За 24 часа</span>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <Icon name="Award" size={16} className="text-blue-900" />
-                </div>
-                <span className="text-lg">500+ довольных клиентов</span>
-              </div>
+
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
                   <Icon name="RefreshCw" size={16} className="text-blue-900" />
@@ -53,6 +52,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="btn-brand text-lg px-8 py-4 animate-fade-in-delay"
+                onClick={onContactClick}
               >
                 <Icon name="MessageCircle" size={20} className="mr-2" />
                 Заказать дизайн

@@ -32,12 +32,6 @@ const Benefits = () => {
       description:
         "Доводим дизайн до совершенства. Вносим изменения, пока результат вас не устроит",
     },
-    {
-      icon: "Award",
-      title: "500+ довольных клиентов",
-      description:
-        "Опыт работы с самыми разными нишами. Знаем, что работает на маркетплейсах",
-    },
   ];
 
   return (
@@ -77,36 +71,6 @@ const Benefits = () => {
               </p>
             </div>
           ))}
-        </div>
-
-        {/* Stats section */}
-        <div className="mt-20 bg-white rounded-3xl p-12 shadow-xl">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-brand-blue mb-2">
-                500+
-              </div>
-              <div className="text-gray-600">Довольных клиентов</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-brand-orange mb-2">
-                24ч
-              </div>
-              <div className="text-gray-600">Среднее время работы</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-brand-blue mb-2">
-                300%
-              </div>
-              <div className="text-gray-600">Рост продаж в среднем</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-brand-orange mb-2">
-                99%
-              </div>
-              <div className="text-gray-600">Положительных отзывов</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
