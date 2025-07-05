@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits";
-import Portfolio from "@/components/Portfolio";
+import Pricing from "@/components/Portfolio";
 import ContactModal from "@/components/ContactModal";
 
 const Index = () => {
@@ -11,7 +11,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Hero onContactClick={() => setContactModalOpen(true)} />
       <Benefits />
-      <Portfolio />
+      <Pricing />
       <ContactModal
         open={contactModalOpen}
         onOpenChange={setContactModalOpen}
